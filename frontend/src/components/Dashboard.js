@@ -47,7 +47,7 @@ class Dashboard extends React.Component{
       </h1>
       <p>
       Please enter the width of the material layer in your wall.
-      The color will indicate the mold risk.
+      The color will indicate the mold risk. <a href="https://github.com/gellati/moldzilla">Source</a>
       </p>
       </div>
       <div>
