@@ -75,17 +75,6 @@ class ResultArea extends React.Component{
     this.props.data)
     this.dataToHex(results)
 
-    let gradientstyle = ctx.createLinearGradient(
-      results['Betoni'],
-      results['CLT'],
-      results['Mineraalivilla'],
-      results['Selluvilla']
-    )
-
-    gradientstyle.addColorStop(0,"black")
-    gradientstyle.addColorStop(0.5,"red")
-    gradientstyle.addColorStop(1,"white")
-
     ctx.fillStyle = this.dataToHex(results) //gradientstyle
     rect({ctx, x: 10, y: 10, width: 500, height: 500});
   }
