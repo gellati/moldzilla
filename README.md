@@ -13,7 +13,7 @@ A mock frontend was built with [React](https://reactjs.org/) and can be seen in 
 
 ## Acknowledgements
 
-![Moldzilla at the City Living in Jätkänsaari Housing Fair, where Moldzilla was one of three finalists to pitch at the main stage.](images/pitch1.png)
+![Moldzilla at the City Living in Jätkänsaari Housing Fair, where Moldzilla was one of three finalists to pitch at the main stage.](images/pitch1.jpg "Team pitch")
 
 Moldzilla at the City Living in Jätkänsaari Housing Fair, where Moldzilla was one of three finalists to pitch at the main stage. Pitch deck can be found [here]().
 
