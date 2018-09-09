@@ -9,10 +9,10 @@ height: 50px;
 margin-bottom: 5%;
 display: block;
 `
-const materials = ["Betoni",
+const materials = ["Concrete",
 "CLT",
-"Selluvilla",
-"Mineraalivilla"
+"Wood fiber",
+"Mineral wool"
 ]
 var results = {}
 /*
