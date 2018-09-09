@@ -33,13 +33,32 @@ class Dashboard extends React.Component{
     props.materialData =  this.materialData
     props.data = this.state.data
 
+    var headerStyle = {
+      width: '80%', margin: '0 auto',
+      paddingLeft: '10%', paddingRight: '10%'
+    }
+
+
     return (
+      <div>
+      <div style={headerStyle}>
+      <h1>
+       MoldZilla
+      </h1>
+      <p>
+      Please enter the width of the material layer in your wall.
+      The color will indicate the mold risk.
+      </p>
+      </div>
+      <div>
         <div>
           <ResultArea {...props}/>
           <Material name="Betoni" {...props} />
           <Material name="CLT" {...props} />
           <Material name="Selluvilla" {...props} />
           <Material name="Mineraalivilla" {...props} />
+        </div>
+        </div>
         </div>
       );
   }

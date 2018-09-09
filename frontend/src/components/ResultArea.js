@@ -4,20 +4,19 @@ import styled from 'styled-components'
 const ResultWrapper = styled.div`
 padding-left: 10%;
 padding-right: 10%;
-border: 1px solid black;
 margin: 0 auto;
 height: 50px;
 margin-bottom: 5%;
 display: block;
 `
-
 const materials = ["Betoni",
 "CLT",
 "Selluvilla",
 "Mineraalivilla"
 ]
 var results = {}
-
+/*
+*/
 function rect(props) {
   const {ctx, x, y, width, height} = props;
   ctx.fillRect(x, y, width, height);
@@ -88,13 +87,19 @@ class ResultArea extends React.Component{
     gradientstyle.addColorStop(1,"white")
 
     ctx.fillStyle = this.dataToHex(results) //gradientstyle
-    rect({ctx, x: 10, y: 10, width: 50, height: 50});
+    rect({ctx, x: 10, y: 10, width: 500, height: 500});
   }
 
   render(){
+    var style = {width: '80%', margin: '0 auto',
+                paddingLeft: '10%', paddingRight: '10%',
+                height: '100%'};
+
     return (
       <ResultWrapper>
-      <canvas ref="canvas" />
+      <canvas ref="canvas"
+      style={style}
+      />
       </ResultWrapper>
     );
   }
