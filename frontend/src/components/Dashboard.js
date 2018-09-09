@@ -2,17 +2,6 @@ import React from 'react';
 import Material from './Material'
 import ResultArea from './ResultArea'
 
-// We can just import Slider or Range to reduce bundle size
-// import Slider from 'rc-slider/lib/Slider';
-// import Range from 'rc-slider/lib/Range';
-
-const materials = ["Concrete",
-                   "CLT",
-                   "Wood fiber",
-                   "Mineral wool"
-                 ]
-var results = {}
-
 class Dashboard extends React.Component{
   constructor(props){
     super()
@@ -38,7 +27,6 @@ class Dashboard extends React.Component{
       paddingLeft: '10%', paddingRight: '10%'
     }
 
-
     return (
       <div>
       <div style={headerStyle}>
@@ -63,6 +51,5 @@ class Dashboard extends React.Component{
       );
   }
 }
-
 
 export default Dashboard;

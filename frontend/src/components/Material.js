@@ -2,9 +2,7 @@ import React from 'react';
 import Slider from 'rc-slider';
 import styled from 'styled-components'
 import Checkbox from 'rc-checkbox'
-// We can just import Slider or Range to reduce bundle size
-// import Slider from 'rc-slider/lib/Slider';
-// import Range from 'rc-slider/lib/Range';
+
 import 'rc-slider/assets/index.css';
 
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
@@ -34,14 +32,31 @@ class Material extends React.Component{
   constructor(props){
     super(props)
     this.onChange = this.onChange.bind(this)
+    this.checkClick = this.checkClick.bind(this)
+    this.state = {
+      clicked: false
+    }
+  }
+
+  checkClick(e, checked){
+    console.log("e", e)
+    console.log("checked", e.target.checked)
+    this.setState({
+      clicked: e.target.checked,
+      startValue: 20
+    })
   }
 
   onChange(e){
-//    console.log(this.props.name + " " + e)
-  //  this.props.values[this.props.name] = e
     let kv = {}
-    kv[this.props.name] = e
-  //  this.props.sliderValues(kv)
+    if(this.state.clicked){
+      kv[this.props.name] =  e
+      this.setState({
+        startValue: e
+      })
+    }else{
+      kv[this.props.name] =  this.state.startValue;
+    }
     this.props.materialData(kv)
   }
 
@@ -51,7 +66,8 @@ class Material extends React.Component{
           <NameWrapper>
           <div>{this.props.name}</div>
           </NameWrapper>
-          <CheckboxWrapper>
+          <CheckboxWrapper
+             onChange={this.checkClick}>
             <Checkbox />
           </CheckboxWrapper>
           <SliderWrapper>
