@@ -6,10 +6,10 @@ import ResultArea from './ResultArea'
 // import Slider from 'rc-slider/lib/Slider';
 // import Range from 'rc-slider/lib/Range';
 
-const materials = ["Betoni",
+const materials = ["Concrete",
                    "CLT",
-                   "Selluvilla",
-                   "Mineraalivilla"
+                   "Wood fiber",
+                   "Mineral wool"
                  ]
 var results = {}
 
@@ -53,10 +53,10 @@ class Dashboard extends React.Component{
       <div>
         <div>
           <ResultArea {...props}/>
-          <Material name="Betoni" {...props} />
+          <Material name="Concrete" {...props} />
           <Material name="CLT" {...props} />
-          <Material name="Selluvilla" {...props} />
-          <Material name="Mineraalivilla" {...props} />
+          <Material name="Wood fiber" {...props} />
+          <Material name="Mineral wool" {...props} />
         </div>
         </div>
         </div>
