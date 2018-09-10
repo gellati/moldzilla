@@ -28,7 +28,7 @@ This will deploy the latest version of the project to github pages. It also upda
 
 The components are in the `src/components` folder.
 
-These components are part of the password strength meter project:
+These components are part of the Moldzilla UI:
 * Dashboard
 * Material
 * ResultArea
