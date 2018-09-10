@@ -15,7 +15,7 @@ A mock frontend was built with [React](https://reactjs.org/) and can be seen in 
 
 ![Moldzilla at the City Living in Jätkänsaari Housing Fair, where Moldzilla was one of three finalists to pitch at the main stage.](images/pitch2.jpg "Team pitch")
 
-*Moldzilla at the City Living in Jätkänsaari Housing Fair, where Moldzilla was one of three finalists to pitch at the main stage. Pitch deck can be found [here]().*
+*Moldzilla at the City Living in Jätkänsaari Housing Fair, where Moldzilla was one of three finalists to pitch at the main stage.*
 
 Project idea and data generation by Katja Rodionova, data mining and analysis by Thomas Forss, frontend development by Omar El-Begawy.
 
